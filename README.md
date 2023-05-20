@@ -45,9 +45,11 @@ Start the server
 
 ## Screenshots
 
-### Student Section
+### Student Video Section
 ![ss-home](https://github.com/tanmoy77/online-learning-platform/assets/84202808/d0bd8fb2-5d45-47a2-b16d-fbeb0fa7b71f)
+### Quiz
 ![ss-quiz](https://github.com/tanmoy77/online-learning-platform/assets/84202808/3f2150e3-ea14-47f5-8b97-af2775eea817)
+### Leaderboard
 ![ss-leaderboard](https://github.com/tanmoy77/online-learning-platform/assets/84202808/0c2422e3-f7d6-447e-ab05-fefee487f50b)
 
 ### Admin Dashboard
