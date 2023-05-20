@@ -163,7 +163,7 @@ const CourseDescSection = ({ video, assignment, quiz }) => {
         {quiz && (
           <button
             disabled={checkQuiz?.length > 0}
-            onClick={() => `/quiz/${video?.id}`}
+            onClick={() => navigate(`/quiz/${video?.id}`)}
             className="px-3 font-bold py-1 border border-cyan text-cyan rounded-full text-sm hover:bg-cyan hover:text-primary"
           >
             {checkQuiz?.length > 0 ? "কুইজ দিয়েছেন" : "কুইজে অংশগ্রহণ করুন"}

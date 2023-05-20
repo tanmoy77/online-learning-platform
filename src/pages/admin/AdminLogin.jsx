@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import learningPortal from "../../assets/image/learningportal.svg";
 import { useAdminLoginMutation } from "../../features/auth/authApi";
 
 const AdminLogin = () => {
@@ -9,6 +8,11 @@ const AdminLogin = () => {
   const [adminLogin, { isLoading, isError, isSuccess }] =
     useAdminLoginMutation();
   const navigate = useNavigate();
+
+  const loadDemoHandle = () => {
+    setEmail("admin@JSshikhi.com");
+    setPassword("lws@123456");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,7 +32,13 @@ const AdminLogin = () => {
     <section className="py-6 bg-primary h-screen grid place-items-center">
       <div className="mx-auto max-w-md px-5 lg:px-0">
         <div>
-          <img className="h-12 mx-auto" src={learningPortal} alt="logo" />
+          {/* <img className="h-12 mx-auto" src={learningPortal} alt="logo" /> */}
+          <h2
+            style={{ textAlign: "center" }}
+            className="h-12 mx-auto logoTitle"
+          >
+            JS শিখি
+          </h2>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-100">
             Sign in to Admin Account
           </h2>
@@ -88,6 +98,13 @@ const AdminLogin = () => {
               className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
             >
               Sign in
+            </button>
+            <button
+              onClick={loadDemoHandle}
+              style={{ marginTop: "15px" }}
+              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-secondary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
+            >
+              Load Credentials
             </button>
           </div>
         </form>

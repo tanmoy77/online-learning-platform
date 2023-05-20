@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import learningPortal from "../../assets/image/learningportal.svg";
 import Error from "../../components/ui/Error";
 import { useRegisterMutation } from "../../features/auth/authApi";
 
@@ -38,7 +37,13 @@ const Registration = () => {
     <section className="py-6 bg-primary h-screen grid place-items-center">
       <div className="mx-auto max-w-md px-5 lg:px-0">
         <div>
-          <img className="h-12 mx-auto" src={learningPortal} alt="logo" />
+          {/* <img className="h-12 mx-auto" src={learningPortal} alt="logo" /> */}
+          <h2
+            style={{ textAlign: "center" }}
+            className="h-12 mx-auto logoTitle"
+          >
+            JS শিখি
+          </h2>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-100">
             Create Your New Account
           </h2>

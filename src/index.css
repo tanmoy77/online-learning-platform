@@ -1606,3 +1606,8 @@ select {
   background-color: rgb(184, 16, 16);
   color: white;
 }
+
+.logoTitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+}

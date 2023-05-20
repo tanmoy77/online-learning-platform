@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import learningPortal from "../../assets/image/learningportal.svg";
 import { userLoggedOut } from "../../features/auth/authSlice";
 
 const AdminNavbar = () => {
@@ -17,7 +16,8 @@ const AdminNavbar = () => {
     <nav className="shadow-md">
       <div className="max-w-7xl px-5 lg:px-0 mx-auto flex justify-between py-3">
         <Link to="/admin/dashboard">
-          <img className="h-10" src={learningPortal} alt="logo" />
+          {/* <img className="h-10" src={learningPortal} alt="logo" /> */}
+          <h2 className="logoTitle">JS শিখি</h2>
         </Link>
         <div className="flex items-center gap-3">
           <h2 className="font-medium">{name}</h2>
